@@ -1,0 +1,27 @@
+[package]
+name = "plank_ecs"
+version = "0.1.0"
+authors = ["Joël Lupien (Jojolepro) <jojolepro@jojolepro.com>"]
+edition = "2018"
+description = "A tiny but very powerful ECS framework."
+keywords = ["game", "ecs"]
+categories = ["game-engines"]
+license = "AGPL-3.0-only"
+exclude = ["doc"]
+repository = "https://git.jojolepro.com/plank_ecs/"
+
+[features]
+default = ["keysize16"]
+parallel = ["world_dispatcher/parallel"]
+big_systems = ["world_dispatcher/big_systems"]
+profiler = ["world_dispatcher/profiler"]
+
+keysize16 = ["entity_component/keysize16"]
+keysize20 = ["entity_component/keysize20"]
+keysize24 = ["entity_component/keysize24"]
+keysize32 = ["entity_component/keysize32"]
+ser = ["entity_component/serde"]
+
+[dependencies]
+entity_component = { version = "0.100.0", default-features=false }
+world_dispatcher = { version = "0.100.0", default-features=false }
