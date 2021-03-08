@@ -1,0 +1,66 @@
+# Planck ECS
+The full ECS (Entity-Component-System) library.
+
+Composed of two smaller libraries:
+* [world_dispatcher](https://github.com/jojolepro/world_dispatcher): the `System` part of the ECS.
+* [entity_component](https://github.com/jojolepro/entity_component): the `Entity-Component` part of the ECS.
+
+Read the [documentation](https://docs.rs/planck_ecs).
+
+# Why would you use this ECS library?
+
+* Compatible with all platforms, including WASM!
+* Fast enough on *every* operation, not just iteration.
+* Public domain licensing: CC0
+* Minimal amount of dependencies.
+* Small code size.
+* Stable, tested, benchmarked, 100% completed.
+* Ability to handle system errors instead of crashing.
+
+# Usage
+Add the following to you Cargo.toml file:
+```
+planck_ecs = "1.0.0"
+```
+
+Use it like so:
+```rust
+use planck_ecs::*;
+fn main() {
+    #[derive(Default)]
+    pub struct A;
+
+    let mut world = World::default();
+
+    let sys = (|comps: &mut Components<A>, entities: &mut Entities| {
+        let entity = entities.create();
+        comps.insert(entity, A);
+        Ok(())
+    }).system();
+
+    let mut dispatch = DispatcherBuilder::new().add_system(sys).build(&mut world);
+    dispatch.run_seq(&world).unwrap();
+    dispatch.run_seq(&world).unwrap();
+    dispatch.run_seq(&world).unwrap();
+
+    assert!(world.get::<Components<A>>().is_ok());
+}
+```
+
+For more examples, see the two following repositories' example folders and documentation:
+* [world_dispatcher](https://github.com/jojolepro/world_dispatcher): information on systems, world and dispatchers.
+* [entity_component](https://github.com/jojolepro/entity_component): information on entities, components and joins.
+
+### Maintainer Information
+
+* Maintainer: Jojolepro
+* Contact: jojolepro [at] jojolepro [dot] com
+* Website: [jojolepro.com](https://jojolepro.com)
+* Patreon: [patreon](https://patreon.com/jojolepro)
+
+### Licence
+
+CC0, public domain.
+
+TLDR: You can do whatever you want with it. Have fun!
+

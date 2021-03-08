@@ -1,15 +1,14 @@
 [package]
-name = "plank_ecs"
-version = "0.1.1"
+name = "planck_ecs"
+version = "1.0.0"
 authors = ["Joël Lupien (Jojolepro) <jojolepro@jojolepro.com>"]
 edition = "2018"
-#description = "A tiny but very powerful ECS framework."
-description = "Renamed to planck_ecs"
+description = "A tiny but very powerful ECS framework."
 keywords = ["game", "ecs"]
 categories = ["game-engines"]
-license = "AGPL-3.0-only"
+license = "CC0-1.0"
 exclude = ["doc"]
-repository = "https://git.jojolepro.com/plank_ecs/"
+repository = "https://github.com/jojolepro/planck_ecs/"
 
 [features]
 default = ["keysize16"]
@@ -24,5 +23,5 @@ keysize32 = ["entity_component/keysize32"]
 ser = ["entity_component/serde"]
 
 [dependencies]
-entity_component = { version = "0.100.0", default-features=false }
-world_dispatcher = { version = "0.100.0", default-features=false }
+entity_component = { version = "1.0.1", default-features=false }
+world_dispatcher = { version = "1.0.2", default-features=false }
