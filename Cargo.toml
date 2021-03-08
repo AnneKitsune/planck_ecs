@@ -1,9 +1,10 @@
 [package]
 name = "plank_ecs"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Joël Lupien (Jojolepro) <jojolepro@jojolepro.com>"]
 edition = "2018"
-description = "A tiny but very powerful ECS framework."
+#description = "A tiny but very powerful ECS framework."
+description = "Renamed to planck_ecs"
 keywords = ["game", "ecs"]
 categories = ["game-engines"]
 license = "AGPL-3.0-only"
