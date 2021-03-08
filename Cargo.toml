@@ -24,4 +24,4 @@ ser = ["entity_component/serde"]
 
 [dependencies]
 entity_component = { version = "1.0.1", default-features=false }
-world_dispatcher = { version = "1.0.2", default-features=false }
+world_dispatcher = { version = "1.0.3", default-features=false }
