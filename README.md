@@ -16,6 +16,7 @@ Read the [documentation](https://docs.rs/planck_ecs).
 * Small code size.
 * Stable, tested, benchmarked, 100% completed.
 * Ability to handle system errors instead of crashing.
+* Convert both functions and closures into systems!
 
 # Usage
 Add the following to you Cargo.toml file:
