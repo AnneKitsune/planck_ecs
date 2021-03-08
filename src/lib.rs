@@ -1,3 +1,11 @@
+//! A minimalist, safe and fast ECS.
+//! Composed of two libraries:
+//! * entity_component
+//! * world_dispatcher
+//!
+//! Planck ECS is a library that brings those two smaller parts together.
+//! It adds the `maintain` function to world, which takes care of cleaning up
+//! dead entities after running systems.
 pub use entity_component::*;
 pub use world_dispatcher::*;
 
