@@ -1,6 +1,6 @@
 [package]
 name = "planck_ecs"
-version = "1.0.0"
+version = "1.1.0"
 authors = ["Joël Lupien (Jojolepro) <jojolepro@jojolepro.com>"]
 edition = "2018"
 description = "A tiny but very powerful ECS framework."
@@ -24,4 +24,4 @@ ser = ["entity_component/serde"]
 
 [dependencies]
 entity_component = { version = "1.0.1", default-features=false }
-world_dispatcher = { version = "1.0.3", default-features=false }
+world_dispatcher = { version = "1.1.0", default-features=false }
