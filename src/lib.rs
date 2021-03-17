@@ -9,7 +9,7 @@
 pub use entity_component::*;
 pub use world_dispatcher::*;
 
-use std::cell::RefMut;
+use atomic_refcell_try::AtomicRefMut;
 use std::any::Any;
 
 /// Extension to the `World` struct that adds a maintain() method.
@@ -23,7 +23,7 @@ impl WorldExt for World {
         if let Ok(mut entities) = self.get_mut::<Entities>() {
             for (typeid, func) in COMPONENT_REGISTRY.lock().unwrap().iter() {
                 if let Ok(any) = self.get_by_typeid(typeid) {
-                    let any: RefMut<dyn Any> = RefMut::map(any, |j| j.as_any_mut());
+                    let any: AtomicRefMut<dyn Any> = AtomicRefMut::map(any, |j| j.as_any_mut());
                     func(any, entities.killed());
                 }
             }

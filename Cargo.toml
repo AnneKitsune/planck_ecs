@@ -23,5 +23,6 @@ keysize32 = ["entity_component/keysize32"]
 ser = ["entity_component/serde"]
 
 [dependencies]
-entity_component = { version = "1.0.2", default-features=false }
-world_dispatcher = { version = "1.2.0", default-features=false }
+entity_component = { version = "1.1.0", default-features=false }
+world_dispatcher = { version = "1.1.0", default-features=false }
+atomic_refcell_try = "0.2.0"
