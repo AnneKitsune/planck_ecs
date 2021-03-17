@@ -26,7 +26,7 @@ Read the [documentation](https://docs.rs/planck_ecs).
 # Usage
 Add the following to you Cargo.toml file:
 ```
-planck_ecs = "1.0.0"
+planck_ecs = "*"
 ```
 
 Use it like so:
