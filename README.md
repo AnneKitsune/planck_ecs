@@ -1,7 +1,7 @@
 <img src="repo/splash.png" alt="Planck ECS" />
-[![Crates.io][crates_img]][crates_lnk]
-[crates_img]: https://img.shields.io/crates/v/planck_ecs.svg
-[crates_lnk]: https://crates.io/crates/planck_ecs
+<a href="https://crates.io/crates/planck_ecs">
+    <img src="https://img.shields.io/crates/v/planck_ecs.svg" alt="Planck ECS" />
+</a>
 
 The full ECS (Entity-Component-System) library.
 
