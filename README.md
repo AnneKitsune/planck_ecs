@@ -70,3 +70,7 @@ CC0, public domain.
 
 TLDR: You can do whatever you want with it. Have fun!
 
+Following discussions on reddit, I'll add the following: 
+We will not be suing anybody for [patent infringement](https://www.gnu.org/licenses/license-list.html#CC0).
+Also, while not enforced by the CC0 license, we ask you to please not pretend you wrote the original software.
+That just wouldn't be a nice thing to do and we trust that you are a nice person.
