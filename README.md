@@ -1,9 +1,13 @@
-Support an Open Source Developer! :hearts:  
+<img src="repo/splash.png" alt="Planck ECS" />
+<a href="https://crates.io/crates/planck_ecs">
+    <img src="https://img.shields.io/crates/v/planck_ecs.svg" alt="Planck ECS" />
+</a>
 
+The full ECS (Entity-Component-System) library.
+
+Support an Open Source Developer! :hearts:  
 [![Become a patron](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/jojolepro)
 
-# Planck ECS
-The full ECS (Entity-Component-System) library.
 
 Composed of two smaller libraries:
 * [world_dispatcher](https://github.com/jojolepro/world_dispatcher): the `System` part of the ECS.
