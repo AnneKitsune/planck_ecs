@@ -1,6 +1,6 @@
 [package]
 name = "planck_ecs"
-version = "1.2.0"
+version = "1.2.1"
 authors = ["Joël Lupien (Jojolepro) <jojolepro@jojolepro.com>"]
 edition = "2018"
 description = "A tiny but very powerful ECS framework."
@@ -20,7 +20,7 @@ keysize16 = ["entity_component/keysize16"]
 keysize20 = ["entity_component/keysize20"]
 keysize24 = ["entity_component/keysize24"]
 keysize32 = ["entity_component/keysize32"]
-ser = ["entity_component/serde"]
+ser = ["entity_component/ser"]
 
 [dependencies]
 entity_component = { version = "1.1.2", default-features=false }
