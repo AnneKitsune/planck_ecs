@@ -23,6 +23,10 @@ keysize32 = ["entity_component/keysize32"]
 ser = ["entity_component/ser"]
 
 [dependencies]
-entity_component = { version = "1.1.2", default-features=false }
-world_dispatcher = { version = "1.2.0", default-features=false }
+entity_component = { version = "1.1.2", default-features = false }
+world_dispatcher = { version = "1.2.0", default-features = false }
 atomic_refcell_try = "0.2.0"
+
+[dev-dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
